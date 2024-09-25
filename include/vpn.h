@@ -1,6 +1,10 @@
 #ifndef vpn_H
 #define vpn_H 1
 
+#ifdef __linux__
+#define _GNU_SOURCE
+#endif
+
 #include <sys/ioctl.h>
 #include <sys/socket.h>
 #include <sys/types.h>
